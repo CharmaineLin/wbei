@@ -228,7 +228,7 @@ class Indicator_API_Date(Resource):
         return {'message':'Collection={} do not exist in the database'.format(collection+'/'+collection_id+'/'+date)},400
 
 if __name__ == '__main__':
-    uri = 'mongodb://admin:admin123@ds261302.mlab.com:61302/wbei'
+    uri = 'mongodb://admin:admin123@ds261302.mlab.com:61302/wbei' #this is a temporary db
     IF=Indicator_Function(uri)
 
     # run the application
